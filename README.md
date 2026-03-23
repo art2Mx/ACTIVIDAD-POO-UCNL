@@ -1,2 +1,4 @@
 # ACTIVIDAD-POO-UCNL
-Aquí se irán subiendo las actualizaciones del proyecto de las actividades.
+ACTIVIDAD DE CALCULO DE COSTO FINAL
+
+1. LA PRIMERA PARTE FUE DEFINIR EL TIPO DE PROGRAMA, CREAR CLASES Y OBJETOS
