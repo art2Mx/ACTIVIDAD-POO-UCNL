@@ -1,26 +1,38 @@
 import java.util.Scanner;
 
-public class postre {
+public class Postre {
 
-    String nombrePostre;
-    int costoProduccion;
-    double margenGanancia = 0.6;
-    double precioVenta;
+    String nombre;
+    String nacionalidad;
+    String temperatura;
+    double precio;
+    String sabor;
 
-        public postre (Scanner sc) {
-            System.out.print("Ingresar nombre del postre: ");
-            nombrePostre = sc.nextLine();
+        public Postre(Scanner sc) {
+            System.out.println("Nombre del postre: ");
+            nombre = sc.nextLine();
 
-            System.out.print("Costro de producción: $");
-            costoProduccion = sc.nextInt();
+            System.out.println("Nacionalidad del postre: ");
+            nacionalidad = sc.nextLine();
+
+            System.out.println("¿Es postre Frío, Caliente, o ambos?: ");
+            temperatura = sc.nextLine();
+
+            System.out.println("¿Cuál es el precio de venta?");
+            System.out.print("$");
+            precio = sc.nextDouble();
 
             sc.nextLine();
-            precioVenta = costoProduccion + (margenGanancia * costoProduccion);
-            
+
+            System.out.println("¿Cuál es el sabor?");
+            sabor = sc.nextLine();
         }
 
         public void anuncio() {
-            System.out.println("Postre: " + nombrePostre);
-            System.out.printf("Precio de venta: %.2f%n", precioVenta);
+            System.out.println("Nombre: " + nombre);
+            System.out.println("El postre proviene de: " + nacionalidad);
+            System.out.println("El postre se sirve " + temperatura);
+            System.out.printf("Precio de venta: %.2f%n", precio);
+            System.out.println("Sabor: " + sabor);
         }
 } 
